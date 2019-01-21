@@ -2,7 +2,9 @@ class Solution:
     # @param A : integer
     # @param B : integer
     # @return a strings
-    def fractionToDecimal(self, A, B):        
+    def fractionToDecimal(self, A, B):       
+        if A == 0:
+            return "0" 
         result = "" if A*B>0 else "-"
         A = abs(A)
         B = abs(B)
