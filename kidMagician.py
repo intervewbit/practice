@@ -21,7 +21,7 @@ class Solution:
                 heappush(maxHeap, -val)
             if len(maxHeap) <= 0:
                 break
-        return chocs
+        return (chocs % 1000000007)
 
 
 A = 2
